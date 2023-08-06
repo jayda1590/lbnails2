@@ -87,6 +87,10 @@ footer {
     max-width: 30%;
 }
 
+.intro-img img {
+    animation: FadeIn 3s ease-in forwards;
+}
+
 .intro-nails {
     border: 5px solid rgb(255, 252, 252);
 }
@@ -235,5 +239,15 @@ hr {
     .img-grid {
         grid-auto-rows: 200px;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
