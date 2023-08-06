@@ -171,7 +171,7 @@ span {
 }
 
 .appt-note {
-    color: var(--accent-color-one);
+    padding: 0 2em;
 }
 
 .appt-note a {
@@ -232,13 +232,17 @@ hr {
     padding: 1em 0;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 50em) { 
+    .navbar {
+        flex-direction: column;
+    }
     .connect, .email, .hours {
         flex-basis: 100%;
     }
 }
 
 @media screen and (max-width: 44em) {
+
     .img-grid {
         grid-auto-rows: 200px;
         grid-template-columns: repeat(2, 1fr);
